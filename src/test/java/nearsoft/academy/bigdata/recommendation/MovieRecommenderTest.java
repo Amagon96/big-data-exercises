@@ -16,7 +16,6 @@ public class MovieRecommenderTest {
         //download movies.txt.gz from
         //    http://snap.stanford.edu/data/web-Movies.html
         String test = System.getProperty("user.dir")+"/src/test/java/nearsoft/academy/bigdata/recommendation/movies.txt.gz";
-        System.out.println("test = " + test);
         MovieRecommender recommender = new MovieRecommender(test);
         assertEquals(7911684, recommender.getTotalReviews());
         assertEquals(253059, recommender.getTotalProducts());
